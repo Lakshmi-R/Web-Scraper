@@ -1,26 +1,59 @@
-# Web-Scraper
-This tool gets the keyword and finds the position of the given url.
+# ScraperClient
 
-This application was built using .Net 8 ,used Dependency Injection, IhttpClientFactory to make a http call , EF core 9 version uses repository pattern, front end uses Angular 19.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
 
-# Project has the following modules.
-Scraper.API
-Scraper.Core
-Scraper.Common
-Scraper.Repository
+## Development server
 
-# Setting up API:
-Connection string used to create and connect database
-"Server=(local)\\SQLEXPRESS;Database=Scraper;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
-Database migration can be found scraper.Repository
-use update-database command in package manage console to create and get access to database.
+To start a local development server, run:
 
-# Setting up SPA 
-Scraper.Client
-Make sure node , npm installed, use ng s -o to run the client application.
+```bash
+ng serve
+```
 
-Used Angular19, Reactive form which gets the input keyword and searchurl and maxcount and interact with web api to add results and bind search results to the table.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-# Output
-when the user clicks on the submit button it will return the currently searched keywords and previous searches from DB.
-![image](https://github.com/user-attachments/assets/d9ce5e43-07d3-4a4b-9ac4-ead845183c69)
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
+```
+
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
