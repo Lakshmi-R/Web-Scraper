@@ -1,5 +1,5 @@
 # Web-Scraper
-This tool gets the keyword and finds the position of the give url.
+This tool gets the keyword and finds the position of the given url.
 
 This application was built using .Net 8 ,used Dependency Injection, IhttpClientFactory to make a http call , EF core 9 version uses repository pattern, front end uses Angular 19.
 
